@@ -1,0 +1,25 @@
+sitemap home label="Hemma"
+{
+	Frame label="Kontor" {
+			Switch item=Kontor icon="light" label="Fönster"
+			Group item=Kontor icon="office" 
+	}
+	Frame label="Sovrum" {
+			// Switch item=Sovrum icon="hue" label="Alla lampor" mappings=[TOGGLE="På / Av"] 			
+			// Switch item=Sovrum icon="hue" label="Alla lampor"
+			Switch item=Lampa_Sovrum_Vanster icon="light" label="Vänster"
+			Switch item=Lampa_Sovrum_Hoger icon="light" label="Höger"
+	}
+	Frame label="Alla Lampor"{
+		Switch item=Lights label="Alla lampor" icon="hue" mappings=[OFF="Stäng av"]
+	}
+	Frame label="TV/Video" {
+		Switch item=Vardagsrum_TV label="TV" icon="video" 		
+	}
+	Frame label="Väder" {
+		Group item=gWeatherCurrent icon="temperature-max" label="Just nu"
+		Group item=gWeatherFuture icon="sun_clouds" label="Prognos"
+		//Group item=gSun icon="sun_clouds" label="Sunrise/Sunset"
+	}
+
+}

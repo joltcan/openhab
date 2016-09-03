@@ -1,0 +1,20 @@
+---
+openhab:
+  image: 'openhab/openhab:amd64-online'
+  restart: always
+  ports:
+    - "8180:8180"
+    - "8143:8143"
+    - "5555:5555"
+  net: "host"
+  environment:
+    - OPENHAB_HTTP_PORT=8180
+    - OPENHAB_HTTPS_PORT=8143
+  volumes:
+    - '/etc/localtime:/etc/localtime:ro'
+    - '/etc/timezone:/etc/timezone:ro'
+    - '/system/brix/storage/openhab/userdata:/openhab/userdata'
+    - '/system/brix/storage/openhab/conf:/openhab/conf'
+  command: "server"
+  devices:
+    - '/dev/ttyACM0:/dev/ttyACM0'

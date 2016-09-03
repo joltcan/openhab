@@ -1,0 +1,10 @@
+sitemap homekit label="HomeKit" {
+	Switch item=Lampa_Kontor_Vanster label="Kontor Vänster"
+	Switch item=Lampa_Kontor_Hoger label="Kontor Höger"
+	Switch item=Lampa_Sovrum_Vanster label="Sovrum Vänster"
+	Switch item=Lampa_Sovrum_Hoger label="Sovrum Höger"
+	Frame label="outlet" icon="outlet" { 
+	    Switch item=Vardagsrum_TV label="TV"
+  }
+
+}

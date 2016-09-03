@@ -1,0 +1,18 @@
+Group	Sovrum
+Group	Kontor
+Group	Vardagsrum
+Group	Film
+Group	Lights
+
+Switch	Lampa_Sovrum_Vanster	"Vänster"	<light>	(Sovrum,Lights)		{ zwave="5:command=switch_binary" }
+Switch	Lampa_Sovrum_Hoger		"Höger"	<light>	(Sovrum,Lights) { zwave="11:command=switch_binary" }
+
+Switch	Lampa_Kontor_Vanster	"Vänster"	<light>	(Kontor,Lights) { zwave="6:command=switch_binary" }
+Switch	Lampa_Kontor_Hoger		"Höger"	<light>	(Kontor,Lights)  { zwave="7:command=switch_binary" }
+
+Switch	Vardagsrum_TV		"TV"	<video>	(Vardagsrum) { zwave="10:command=switch_binary" }
+
+DateTime Sunrise_Time   "Sunrise [%1$tl:%1$tM %1$tp]"  {astro="planet=sun, type=rise, property=start"}
+DateTime Sunset_Time    "Sunset [%1$tl:%1$tM %1$tp]"   {astro="planet=sun, type=set, property=end"}
+Switch   Sunrise_Event                           {astro="planet=sun, type=rise, property=start, offset=0"}
+Switch   Sunset_Event                            {astro="planet=sun, type=set, property=end, offset=0"}
