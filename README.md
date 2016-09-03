@@ -3,7 +3,7 @@
 This is my home automation setup. I'm using OpenHAB(1) together with habmin.
 
 ## Docker
-I'm an exstensive docker user, if you want to try this without installing to much stuff, just use my docker-compose.yml file with `docker-compose up -d` in this dir. Then `docker-compose logs` to see the output from your container.
+I'm an extensive docker user, if you want to try this without installing to much stuff, just use my docker-compose.yml file with `docker-compose up -d` in this dir. Then `docker-compose logs` to see the output from your container.
 
 ## Config files:
 The basic configs are sitemap/home.sitemap and home.items. However, I wanted sunrise/sunset to toggle lights on and off, so thats why weather.items is also included. This is also an homekit.sitemap, which is needed for the homekit mapping (i.e. Siri).
