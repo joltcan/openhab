@@ -12,7 +12,7 @@ The basic configs are sitemap/home.sitemap and home.items. However, I wanted sun
 Config files are as confusing as the habmin interface, but that was the easiest way to actually add and rename the z-wave items (Configuration, Items and Groups, Bindings). The names in the item list is what you use in your sitemap.
 
 ## Homekit / Siri
-Install [OpenHAB-HomeKit-Bridge](https://github.com/htreu/OpenHAB-HomeKit-Bridge), and tweak the homekit.sitemap to map into the items you want to control with Siri. Since you will tell Siri the names, they need to be different from each other, otherwise you will struggle with your lamps a lot...
+Install [HomeKit support for the impatient](https://github.com/nfarina/homebridge) and tweak the config.json in .homebridge to map into the items you want to control with Siri. Since you will tell Siri the names, they need to be different from each other, otherwise you will struggle with your lamps a lot...
 
 ### App
 I use Insteon+ for mapping what Siri sees with the names, so that I don't have to change the config file. This is supposedly being fixed in iOS 10.
